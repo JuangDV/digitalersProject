@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", "Sans-Serif";
+    box-sizing: border-box;
+}
+
+body { background: linear-gradient(90deg, #e9791a 0%, #fab24d 100%); }
+
+#header_div {
+    width: 100%;
+    height: 40vh;
+    max-height: 40vh;
+    background-image: url("../images/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 10%;
+}
+
+#navegador {
+    border-bottom: 2px solid #000;
+    width: 100%;
+    height: 80px;
+    padding: 8px;
+}
+
+#navegador_nav_ul {
+    position: absolute;
+    right: 0;
+}
+
+.navegador_nav_ul_li {
+    cursor: pointer;
+    margin: 8px;
+    padding: 12px 40px;
+    outline: 2px solid #000;
+    border-radius: 40px;
+    background-color: #E9791A;
+    color: #000;
+    float: left;
+    transition: all .3s;
+}
+.navegador_nav_ul_li:last-child {
+    margin-right: 20px;
+}
+
+.navegador_nav_ul_li:hover {
+    background-color: #f78e33;
+    color: #fff;
+    transition: all .3s;
+}
+
+.webicon {
+    position: absolute;
+    left: 0;
+}
+
+.webicon img {
+    margin: auto;
+    margin-left: 20px;
+    width: 64px;
+    height: 64px;
+    border: 1px solid #fab24d;
+    border-radius: 50%;
+}
+
+@media (max-width:970px){
+    #header_div {
+        height: 40vh;
+    }
+    .navegador_nav_ul_li {
+        cursor: pointer;
+        margin: auto;
+        margin-left: 12px;
+        padding: 8px 20px;
+        outline: 1px solid #000;
+        border-radius: 40px;
+        background-color: #E9791A;
+        font-size: 12px;
+        transition: all .3s;
+    }
+    .webicon img {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #fab24d;
+        border-radius: 50%;
+    }
+    #navegador {
+        border-bottom: 1px solid #000;
+        width: 100%;
+        height: 56px;
+    }
+}
+
+@media (max-width:640px){
+    #header_div {
+        max-height: 30vh;
+    }
+    #navegador_nav_ul {
+        display: none;
+    }
+}
